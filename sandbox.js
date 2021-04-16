@@ -231,10 +231,10 @@ console.log( 'artists[ 2 ].bio: ', artists[ 2 ].bio );
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[ 8 ].name
-console.log('artists[ 8 ].name: ', artists[ 8 ].name);
+console.log( 'artists[ 8 ].name: ', artists[ 8 ].name );
 artists[ 8 ].name = 'Vincent van Gogh';
 artists[ 8 ].name
-console.log('artists[ 8 ].name: ', artists[ 8 ].name);
+console.log( 'artists[ 8 ].name: ', artists[ 8 ].name );
 
 //-----------------------------------------------------------------------------------------
 //-----------------------------------------3----------------------------------------------
@@ -288,7 +288,7 @@ function get20s( arr ) {
   return arr2000
 }
 get20s( artists );
-console.log('get20s( artists ): ', get20s( artists ));
+console.log( 'get20s( artists ): ', get20s( artists ) );
 
 
 //-----------------------------------------------------------------------------------------
@@ -302,11 +302,24 @@ console.log('get20s( artists ): ', get20s( artists ));
  4. Return the length of the remaining dataset.
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
-
-function removeArtist( /*Your Code Here*/) {
-  /*Your Code Here*/
+/*Array.prototype.splice()
+The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+const months = [ 'Jan', 'March', 'April', 'June' ];
+months.splice( 1, 0, 'Feb' );
+// inserts at index 1
+console.log( months );
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+months.splice( 4, 1, 'May' );
+// replaces 1 element at index 4
+console.log( months );
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
+*/
+function removeArtist( arr, idx ) {
+  arr.splice( arr, 1 );
+  return arr.length;
 }
-
+// removeArtist( artists, 0 );
+console.log( 'removeArtist( artists, 0 ): ', removeArtist( artists, 0 ) );
 
 
 
@@ -319,19 +332,33 @@ Use addArtist to do the following:
 2. Add this object of information to the end of the array
     { 
       id: 20,
-      name: Your Name Here, 
-      years: Your Birth Year - current day,
+      name: Bryan Guner, 
+      years: `1996 - ${new Date().toLocaleDateString( "en-US" )}`
       genre: Web Design, 
-      nationality: Your Nationality Here
-      bio: Add 1-2 sentences (or use lorem ipsum)
+      nationality: American/Russian
+      bio: A passionate Web Developer, Electrical Engineer, Musician & Producer🔭 Contract Web Development Relational Concepts🌱 I 'm currently learning React/Redux, Python, Java, Express, jQuery 👯 I'm looking to collaborate on Any web audio or open source educational tools.🤝I 'm looking for help with Learning React 👨‍💻 All of my projects are available at https://bgoonz.github.io/ 📝 I regularly write articles on medium && Web-Dev-Resource-Hub 💬 Ask me about Anything:📫 How to reach me bryan.guner @gmail.com⚡ Fun fact I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.
     }  
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist( /*Your Code Here*/) {
-  /*Your Code Here*/
+
+
+
+
+function addArtist( arr ) {
+  let appendObj = {
+    id: 20,
+    name: 'Bryan Guner',
+    years: `1996 - ${new Date().toLocaleDateString( "en-US" )}`,
+    genre: 'Web Design',
+    nationality: 'American / Russian',
+    bio: 'A passionate Web Developer, Electrical Engineer, Musician & Producer. I am currently learning React/Redux, Python, Java, Express, jQuery 👯 I am looking to collaborate on Any web audio or open source educational tools.🤝I m looking for help with Learning React 👨‍💻 All of my projects are available at https://bgoonz.github.io/ 📝 I regularly write articles on medium && Web-Dev-Resource-Hub 💬 Ask me about Anything:📫 How to reach me bryan.guner @gmail.com⚡ Fun fact I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.'
+  }
+  arr.push( appendObj );
+  return arr;
 }
+console.log( 'addArtist(artists ): ', addArtist( artists ) );
 
 
 
@@ -347,12 +374,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt( /*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt( arr ) {
+  let res = [];
+  let dedicated = arr.filter( ( curEl ) => {
+    return curEl.paintings > 100;
+  } );
+  for ( let i = 0; i < dedicated.length; i++ ) {
+    res.push( dedicated[ i ].name );
+  }
+  return res;
 }
-
-
-
+lotsOfArt( artists );
+console.log( 'lotsOfArt( artists ): ', lotsOfArt( artists ) );
 
 
 
