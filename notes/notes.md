@@ -25,24 +25,24 @@ Please answer the following questions below, you may edit the readme file to inc
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
-
+```
 1.) Use the alt attribute to describe the content of images.
 
 2.)Ensure sufficient contrast between text and it's background so that color-blind users may still discern the shape of text if not the color.
 
 3.)Make your website navigation formulaic and predictable so that anyone who frequents other websites will not have to adjust their mental model of website structure to interact with your product.
-
+```
 
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-In my mind a variable is a sort of reference or identifier used to refer to the state in computer in a certain location in memory. In reality these locations or buckets if you will are referenced by hexidecimal numbers and ultimatly in binary to the transistors of the computer but in order to productivly interact with them human developers have implemented a layer of abstraction between the raw memory addresses referenced in machine code and the arbitrary variable names given to them by programmers developing in a high level language.
+>In my mind a variable is a sort of reference or identifier used to refer to the state in computer in a certain location in memory. In reality these locations or buckets if you will are referenced by hexidecimal numbers and ultimatly in binary to the transistors of the computer but in order to productivly interact with them human developers have implemented a layer of abstraction between the raw memory addresses referenced in machine code and the arbitrary variable names given to them by programmers developing in a high level language.
 
 
 
 4. What is the purpose of using functions in code?
 
-Functions allow us to isolate a simple repeatable block of code and use it to preform a dedicated task whenever nessicitated by the design process regardless of the sequence of steps undertaken leading up to it's invocation. Functions provide modularity (DRY code) where as the alternative would be repeating the logical steps dictated by the function every single time it's dedicated purpose arises in the overall code base.
+>Functions allow us to isolate a simple repeatable block of code and use it to preform a dedicated task whenever nessicitated by the design process regardless of the sequence of steps undertaken leading up to it's invocation. Functions provide modularity (DRY code) where as the alternative would be repeating the logical steps dictated by the function every single time it's dedicated purpose arises in the overall code base.
 
 
 
