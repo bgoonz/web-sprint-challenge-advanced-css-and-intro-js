@@ -200,6 +200,33 @@ export const artists = [
       "paintings": 328
     }
 ]
+//!=======================================================================
+/*
+const artists = [ {
+      "id": 0,
+      "name": "Amedeo Modigliani",
+      "years": "1884 - 1920",
+      "genre": "Expressionism",
+      "nationality": "Italian",
+      "bio": "Amedeo Clemente Modigliani (Italian pronunciation: [ameˈdɛːo modiʎˈʎaːni]; 12 July 1884 – 24 January 1920) was an Italian Jewish painter and sculptor who worked mainly in France. He is known for portraits and nudes in a modern style characterized by elongation of faces, necks, and figures that were not received well during his lifetime but later found acceptance. Modigliani spent his youth in Italy, where he studied the art of antiquity and the Renaissance. In 1906 he moved to Paris, where he came into contact with such artists as Pablo Picasso and Constantin Brâncuși. By 1912 Modigliani was exhibiting highly stylized sculptures with Cubists of the Section d'Or group at the Salon d'Automne.",
+      "wikipedia": "http://en.wikipedia.org/wiki/Amedeo_Modigliani",
+      "paintings": 193
+    },
+    {
+      "id": 1,
+      "name": "Vasiliy Kandinskiy",
+      "years": "1866 - 1944",
+      "genre": "Expressionism,Abstractionism",
+      "nationality": "Russian",
+      "bio": "Wassily Wassilyevich Kandinsky (Russian: Васи́лий Васи́льевич Канди́нский, tr. Vasíliy Vasílʹevich Kandínskiy) (16 December [O.S. 4 December] 1866 – 13 December 1944) was a Russian painter and art theorist.",
+      "wikipedia": "http://en.wikipedia.org/wiki/Wassily_Kandinsky",
+      "paintings": 88
+    }]
+*/
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------1----------------------------------------------
+//-----------------------------------------------------------------------------------------
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -214,13 +241,24 @@ console.log('artists[0].name: ', artists[0].name);
 //(2) Bio of the third artist (2nd index) in the array 
 // 
 // artists[ 2 ].bio
-console.log('artists[ 2 ].bio: ', artists[ 2 ].bio);
+console.log( 'artists[ 2 ].bio: ', artists[ 2 ].bio );
+
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------2----------------------------------------------
+//-----------------------------------------------------------------------------------------
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+artists[8]
 
+
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------3----------------------------------------------
+//-----------------------------------------------------------------------------------------
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -232,12 +270,17 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr,idx) {
+ return `the artist at index ${id} is ${name}`
 }  
 
 
 
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------4----------------------------------------------
+//-----------------------------------------------------------------------------------------
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
 1. Receive an array
@@ -252,6 +295,11 @@ function get20s(/*Your Code Here*/){
 
 
 
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------5----------------------------------------------
+//-----------------------------------------------------------------------------------------
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
  1. Receive an array
@@ -266,6 +314,11 @@ function removeArtist(/*Your Code Here*/){
 }
    
 
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------6----------------------------------------------
+//-----------------------------------------------------------------------------------------
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
@@ -288,6 +341,11 @@ function addArtist(/*Your Code Here*/){
 
   
 
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------7----------------------------------------------
+//-----------------------------------------------------------------------------------------
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -302,6 +360,11 @@ function lotsOfArt(/*Your Code Here*/){
 
 
 
+
+
+//-----------------------------------------------------------------------------------------
+//------------------------------------------Stretch-1----------------------------------------------
+//-----------------------------------------------------------------------------------------
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
 Programmatically console.log HTML element structure.
@@ -331,6 +394,11 @@ function getHTML(/* Code here */){
   }
 
 
+
+
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------Stretch-2---------------------------------------------
+//-----------------------------------------------------------------------------------------
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
@@ -341,6 +409,11 @@ function randomize(/* Code here */){
   }
 
 
+
+
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------Stretch-3----------------------------------------------
+//-----------------------------------------------------------------------------------------
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
