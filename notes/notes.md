@@ -1,13 +1,7 @@
 
 # Sprint Challenge: Advanced CSS and Intro to JavaScript - Influential Artists
 
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS and introductory JavaScript concepts. During this Sprint, you studied responsive web design, variable declaration, conditionals, loops, functions, arrays, and objects. In your challenge this week, you will demonstrate proficiency by creating a website of influential artists with data from an object.
-
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
-
-You are not allowed to collaborate during the Sprint Challenge. Your work reflects your proficiency in Responsive Design, and JavaScript Basics.
 
 
 ## Introduction
@@ -24,9 +18,34 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+
+> Wenb design is no longer a fringe area of technology made by programmers for programmers. Today the user base of the web counts  blind, color blind, people who are otherwise visually impared, as well as those who are Deaf or hard of hearing, in addition to people coping with physical or mental disibilities among their ranks. In this ever evolving ecosystem we can no longer rely on color to be the driving force in sharing information. We must also take into account the content of a picture rather than assuming it will speak for it's self in the face of ever greater adoption of screen readers as a means to consume online media. These considerations are just the tip of the iceberg but the fact of the matter is that web developers must be fully cognicent of these considerations in order to provide a quality web experiece. 
+
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+
+1.) Use the alt attribute to describe the content of images.
+
+2.)Ensure sufficient contrast between text and it's background so that color-blind users may still discern the shape of text if not the color.
+
+3.)Make your website navigation formulaic and predictable so that anyone who frequents other websites will not have to adjust their mental model of website structure to interact with your product.
+
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+In my mind a variable is a sort of reference or identifier used to refer to the state in computer in a certain location in memory. In reality these locations or buckets if you will are referenced by hexidecimal numbers and ultimatly in binary to the transistors of the computer but in order to productivly interact with them human developers have implemented a layer of abstraction between the raw memory addresses referenced in machine code and the arbitrary variable names given to them by programmers developing in a high level language.
+
+
+
 4. What is the purpose of using functions in code?
+
+Functions allow us to isolate a simple repeatable block of code and use it to preform a dedicated task whenever nessicitated by the design process regardless of the sequence of steps undertaken leading up to it's invocation. Functions provide modularity (DRY code) where as the alternative would be repeating the logical steps dictated by the function every single time it's dedicated purpose arises in the overall code base.
+
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

@@ -208,11 +208,13 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+// artists[0].name
+console.log('artists[0].name: ', artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
-
+// 
+// artists[ 2 ].bio
+console.log('artists[ 2 ].bio: ', artists[ 2 ].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
@@ -222,6 +224,8 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
+ 
+ 
  1. Receive an array
  2. Receive a number, which is the desired index in the array.
  3. Return a string in the format `the artist at index {id} is {name}`
